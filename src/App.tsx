@@ -2,7 +2,7 @@ import type { FC } from 'react';
 
 import { Footer } from './Footer';
 import { Header } from './Header';
-import { Main } from './Main2';
+import { Main } from './Main';
 import { Section } from './Section';
 import { users } from './users';
 import { Wrapper } from './Wrapper';
