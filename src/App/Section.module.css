@@ -1,0 +1,7 @@
+.section {
+  padding: 2rem 0;
+}
+
+.section:nth-of-type(2n) {
+  background-color: #e8e8e8;
+}
