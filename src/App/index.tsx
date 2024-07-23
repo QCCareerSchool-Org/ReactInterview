@@ -1,6 +1,5 @@
 import type { FC } from 'react';
 
-import { Parent } from '../State';
 import { users } from '../users';
 import { Footer } from './Footer';
 import { Header } from './Header';
