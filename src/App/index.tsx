@@ -20,7 +20,7 @@ export const App: FC = () => (
       <Section>
         <div className="container">
           <h2>User List</h2>
-          <p>Create a new component called UsersTable that accepts an array of users as a prop and displays the users in a table. Add the component below and pass in the users as a prop.</p>
+          <p>Create a new component called UsersTable that accepts an array of users as a prop and displays the users in a table. For users with no website, write &quot;n/a&quot; in the website column. Add the component below and pass in the users as a prop.</p>
           &lt;insert UsersTable here&gt;
           <pre>
             {JSON.stringify(users, null, '  ')}
