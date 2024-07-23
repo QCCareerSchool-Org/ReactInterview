@@ -1,12 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { App } from './App/index.tsx';
+import type { FC, PropsWithChildren } from 'react';
 
-import './main.css';
+import styles from './Main.module.css';
 
-// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+export const Main: FC<PropsWithChildren> = ({ children }) => (
+  <main className={styles.main}>
+    {children}
+  </main>
 );

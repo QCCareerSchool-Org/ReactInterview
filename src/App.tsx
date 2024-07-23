@@ -1,10 +1,10 @@
 import type { FC } from 'react';
 
-import { users } from '../users';
 import { Footer } from './Footer';
 import { Header } from './Header';
 import { Main } from './Main';
 import { Section } from './Section';
+import { users } from './users';
 import { Wrapper } from './Wrapper';
 
 export const App: FC = () => (
