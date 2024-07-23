@@ -1,9 +1,9 @@
-export type User = {
+export interface User {
   id: number;
   name: string;
   age: number;
   website?: string;
-};
+}
 
 export const users: User[] = [
   { id: 1, name: 'Joe', age: 27, website: 'https://www.example.com/joe' },

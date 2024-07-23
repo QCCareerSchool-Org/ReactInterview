@@ -3,14 +3,14 @@ module.exports = {
   env: { browser: true, es2020: true },
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'plugin:@typescript-eslint/strict-type-checked',
+    'plugin:@typescript-eslint/stylistic-type-checked',
     'plugin:react-hooks/recommended',
     'plugin:react/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs', 'public'],
+  ignorePatterns: ['dist', '.eslintrc.cjs', 'public', 'vite.config.ts', 'src/vite-env.d.ts'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
@@ -206,13 +206,13 @@ module.exports = {
     // import rules
     'import/order': ['error', { alphabetize: { order: 'asc', caseInsensitive: true } }],
 
-    'react-refresh/only-export-components': [ 'warn', { allowConstantExport: true } ],
+    'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
   },
   overrides: [
     {
-      files: [ '*.ts', '*.tsx' ],
+      files: ['*.ts', '*.tsx'],
       rules: {
-        '@typescript-eslint/explicit-function-return-type': [ 'error', { allowExpressions: true } ],
+        '@typescript-eslint/explicit-function-return-type': ['error', { allowExpressions: true }],
         '@typescript-eslint/explicit-member-accessibility': 'error',
       },
     },
@@ -229,4 +229,7 @@ module.exports = {
       },
     },
   ],
+  settings: {
+    react: { version: 'detect' },
+  },
 }
