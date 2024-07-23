@@ -38,7 +38,7 @@ export const App: FC = () => (
         <div className="container">
           <h2>State</h2>
           <p>Create a new component called Parent that displays a message, where the message's initial value is passed in as a prop. Add the component below and pass in an initial message of &quot;Hello&quot;.</p>
-          <p>Create a second component called Child. Add the component to Parent. Add a button to Child that, when clicked, changes the message to &quot;Hello, World!&quot;.</p>
+          <p>Create a second component called Child. Add the component to Parent. Add a text input and button to Child so that, when the button is clicked, the parent's message changes to whatever text is in the text input.</p>
           &lt;insert Parent here&gt;
         </div>
       </Section>
